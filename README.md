@@ -32,18 +32,19 @@ module.exports = callYourAPI;
 ## Jest Request Overview 
 
 ``` Javascript
+const yourCallbackVariable = require("insert-your-filePath-here");
 
-describe('Data Validation - Provider Cache', function () {
-    test('Rose Medical Center [Name] Validated in Correct Schema Position', async () => {
-        let data = await callProviderCache();
-        var DataExtraction = JSON.parse(JSON.stringify(data.data[80].name));
+describe('Small Text Description of your Test Suite + Needs', function () {
+    test('Description of what your testing', async () => {
+        let data = await yourCallbackVariable();
+        var DataExtraction = JSON.parse(JSON.stringify(data.path[x-object-number]));
         console.log(DataExtraction); 
-        expect(DataExtraction).toBe("Rose Medical Center");
+        expect(DataExtraction).toBe("Your String");
     })
-    test('Rose Medical Center [Location] Validated in Correct Schema Position', async () => {
-        let data = await callProviderCache();
-        var DataExtraction = JSON.parse(JSON.stringify(data.data[80].providerLocationUrlTitle));
-        expect(DataExtraction).toBe("rose-medical-center");
+    test('Description of what your testing', async () => {
+       let data = await yourCallbackVariable();
+       var DataExtraction = JSON.parse(JSON.stringify(data.path[x-object-number]));
+       expect(DataExtraction).toBe("Your String");
     })
 }
 );
