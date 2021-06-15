@@ -1,0 +1,14 @@
+{
+  "name": "testing-proof-of-concept",
+  "version": "1.0.0",
+  "description": "A Proof of Concept for various API strategies in dotCMS",
+  "main": "axios.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node src/axios.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "jest": "^27.0.4"
+  }
+}
