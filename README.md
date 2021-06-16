@@ -56,3 +56,11 @@ Testing with the JEST Framework is Possible. The efficacy has yet to be determin
 
 ### Anticipatory Process Issues [JEST]:
 To be determined is parsing this response to a document. Current Theory inolves usage of Azure Pipeline or gitHub extensions to create a report that exports immediately along the pipeline. 
+
+### Development Materials [JEST]:
+- Test Setup/Teardown - [How to setup in test](https://jestjs.io/docs/setup-teardown)
+- Expect Functions [Data/Code Matching](https://jestjs.io/docs/expect)
+- JEST Matching - [Common Use](https://jestjs.io/docs/using-matchers)
+- Testing Async Functions [Functions that wait for Data to be returned](https://jestjs.io/docs/asynchronous)
+- Testing REACT -[For use with REACT applications; Sitecore use](https://testing-library.com/docs/react-testing-library/example-intro/)
+- Snapshot Tests - [Tests an entire page's source code vs. the updated page](https://jestjs.io/docs/snapshot-testing)
