@@ -57,6 +57,19 @@ Testing with the JEST Framework is Possible. The efficacy has yet to be determin
 ### Anticipatory Process Issues [JEST]:
 To be determined is parsing this response to a document. Current Theory inolves usage of Azure Pipeline or gitHub extensions to create a report that exports immediately along the pipeline. 
 
+### How to Run JEST
+
+After installing, and navigating to that directory, enter the following command into the terminal to run all suites:
+```Javascript
+npm test
+```
+
+To run a singular test:
+[Example: Filename holding test is 'FindCare-Analytics.spec.js']
+```Javascript
+npm test FindCare-Analytics
+```
+
 ### Development Materials [JEST]:
 - Test Setup/Teardown - [How to setup in test](https://jestjs.io/docs/setup-teardown)
 - Expect Functions [Data/Code Matching](https://jestjs.io/docs/expect)
