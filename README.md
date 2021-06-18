@@ -70,6 +70,11 @@ To run a singular test:
 npm test FindCare-Analytics
 ```
 
+#### Run on Heroku
+Alternatively, you can log into Heroku (to the deployed pipeline) and run the console using these commands. From there, you can save the run log [saved by the second]
+
+https://user-images.githubusercontent.com/76119280/122488498-2c03d680-cfa3-11eb-9ee6-ba3de6872ced.mp4
+
 ### Development Materials [JEST]:
 - Test Setup/Teardown - [How to setup in test](https://jestjs.io/docs/setup-teardown)
 - Expect Functions [Data/Code Matching](https://jestjs.io/docs/expect)
