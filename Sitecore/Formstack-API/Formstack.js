@@ -3,12 +3,20 @@ var axios = require("axios");
 /* This is the Axios Config where you add required headers. 
 Axios handles the base request automatically with a method and URL.
 External Auth requires extra exception handling.*/
+//axios.defaults.headers.common['Authorization'] = AUTH_TOKEN;
+const AUTH_TOKEN = 'token';
+
 var config = {
   method: 'get',
-  url: 'https://medicalcityhealthcare.com/api/content/render/false/type/json/query/+contentType:Feature%20-Feature.cssSelector:na%20-Feature.status:*obsolete*%20+languageId:1%20+deleted:false%20+live:true%20+working:true/orderby/modDate%20desc/limit/400'
+  url: 'https://api-stg.internal.medcity.net/forms-services/api/1.0/form/full/3791543',
+  headers: {
+    "Access-Control-Allow-Origin" : "*",
+    "Content-type": "Application/json",
+    "Authorization": `Bearer ${AUTH_TOKEN}`
+    }   
 };
 
-async function APIHandlerOnline() {
+async function FormstackTest() {
   /*Axios needs to be Nested within Promise. 
   Notice it has 2 arguments to the Promise: resolve and reject.
   Presented in order of occurence.*/
@@ -24,6 +32,7 @@ async function APIHandlerOnline() {
       //The catch statement pulls the function.
       .catch(function (error) {
         //Catches errors with the request.
+        console.log('HTTP Code: '+ error.status);
         console.log(error);
         //Reject is the second callback funtion we added for returning the error to the test.
         reject(error);
@@ -33,4 +42,4 @@ async function APIHandlerOnline() {
 }
 
 //Must be present to insert the promise into it's called function.
-module.exports = APIHandlerOnline;
+module.exports = FormstackTest;
