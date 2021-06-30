@@ -5,6 +5,7 @@ describe('Data Retrieval - Medical City Analytics [Type]', function () {
         let data = await callAnalyticsMedicalCity();
         var DataExtraction = JSON.parse(JSON.stringify(data.contentlets[0].type1));
         expect(DataExtraction).toBe("syndicated");
+        
         //Line 7 verifies the exact match [using toBe command] for this Data Value.
     })
     test('App Type is equal to expected Value', async () => {
@@ -17,6 +18,8 @@ describe('Data Retrieval - Medical City Analytics [Type]', function () {
         let data = await callAnalyticsMedicalCity();
         var DataExtraction = JSON.parse(JSON.stringify(data.contentlets[2].type1));
         expect(DataExtraction).toBe("app");
+        var DataExtraction = JSON.parse(JSON.stringify(data.contentlets[3].type1));
+        expect(DataExtraction).toBe("widget");
         //Line 7 verifies the exact match [using toBe command] for this Data Value.
     })
     test('App Type is equal to expected Value', async () => {
